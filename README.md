@@ -11,7 +11,7 @@
             alt="pulls"></a>
 </p>
 <h2 align="center">
-<a href="https://irtsa.dev">SOMIX</a>
+<a href="https://somix.dev">SOMIX</a>
 </h2>
 <br />
 <p align="center">
