@@ -120,7 +120,7 @@ function determinePrice(RecipeEffects) {
     recipeEffectsLength = RecipeEffects.length;
     multiplier = 1;
     for (i = 0; i < recipeEffectsLength; i++) {multiplier += Effects[RecipeEffects[i]];}
-    return Math.round(price * multiplier);
+    return Math.round((price * multiplier) - 0.01);
 }
 
 
