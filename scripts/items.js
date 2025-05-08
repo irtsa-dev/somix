@@ -188,6 +188,7 @@ for (const [key, value] of Object.entries(Products)) {
     ele.setAttribute('class', 'product')
 
     ele.addEventListener('click', (event) => {
+        if (recipe.children.length == 8) {return null;}
         event.preventDefault();
         addRecipe('product', ele.id);
         displayRecipeInformation();
@@ -206,6 +207,7 @@ for (const [key, value] of Object.entries(Ingredients)) {
     ele.setAttribute('class', 'ingredient')
 
     ele.addEventListener('click', (event) => {
+        if (recipe.children.length == 8) {return null;}
         event.preventDefault();
         addRecipe('ingredient', ele.id);
         displayRecipeInformation();
