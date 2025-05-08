@@ -120,7 +120,7 @@ function determinePrice(RecipeEffects) {
     recipeEffectsLength = RecipeEffects.length;
     multiplier = 1;
     for (i = 0; i < recipeEffectsLength; i++) {multiplier += Effects[RecipeEffects[i]];}
-    return Math.round(price * multiplier);
+    return Math.round((price * multiplier) - 0.01);
 }
 
 
@@ -188,6 +188,7 @@ for (const [key, value] of Object.entries(Products)) {
     ele.setAttribute('class', 'product')
 
     ele.addEventListener('click', (event) => {
+        if (recipe.children.length == 8) {return null;}
         event.preventDefault();
         addRecipe('product', ele.id);
         displayRecipeInformation();
@@ -206,6 +207,7 @@ for (const [key, value] of Object.entries(Ingredients)) {
     ele.setAttribute('class', 'ingredient')
 
     ele.addEventListener('click', (event) => {
+        if (recipe.children.length == 8) {return null;}
         event.preventDefault();
         addRecipe('ingredient', ele.id);
         displayRecipeInformation();

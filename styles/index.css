@@ -9,6 +9,9 @@
 body {
     background: #222222;
     font-family: 'Courier New Thin', Courier, monospace, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -64,12 +67,28 @@ pre.price-info {
 }
 
 
+input {
+    transition: all 0.2s ease-in-out;
+}
+
 input:hover {
     transform: scale(1.3);
     filter: brightness(1.2);
     transition: all 0.2s ease-in-out;
 }
 
-input {
+input.linkicon {
+    padding: 1em;
+    max-width: 5em;
     transition: all 0.2s ease-in-out;
+}
+
+input.linkicon:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+
+footer {
+    margin-top: auto;
 }
