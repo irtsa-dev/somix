@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #222222;
+    font-family: 'Courier New Thin', Courier, monospace, sans-serif;
+}
+
+
+div {
+    text-align: center;
+}
+
+div.banner {
+    text-align: left;
+    padding-left: 1em;
+}
+
+
+.product, .ingredient {
+    width: 4em;
+}
+
+
+h2.text {
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+h3.text {
+    text-align: center;
+    color: #999999;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+
+pre {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+pre.priceinfo {
+    color: #86c986
+}
+
+pre.effectinfo {
+    color: #cccccc
+}
+
+pre.price-info {
+    text-align: center;
+    color: #bbbbbb;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+
+input:hover {
+    transform: scale(1.3);
+    filter: brightness(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
+input {
+    transition: all 0.2s ease-in-out;
+}
