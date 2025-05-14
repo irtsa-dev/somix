@@ -52,11 +52,12 @@ pre {
 }
 
 pre.priceinfo {
-    color: #86c986
+    color: #86c986;
 }
 
 pre.effectinfo {
-    color: #cccccc
+    color: #cccccc;
+    white-space: pre-wrap;
 }
 
 pre.price-info {
