@@ -180,7 +180,7 @@ function addRecipe(itemType, itemName) {
 
 
 for (const [key, value] of Object.entries(Products)) {
-    let ele = document.createElement('input')
+    let ele = document.createElement('input');
 
     ele.setAttribute('type', 'image');
     ele.setAttribute('src', ('./assets/products/' + key.replace(' ', '').toLowerCase() + '.png'));
@@ -199,7 +199,7 @@ for (const [key, value] of Object.entries(Products)) {
 
 
 for (const [key, value] of Object.entries(Ingredients)) {
-    let ele = document.createElement('input')
+    let ele = document.createElement('input');
 
     ele.setAttribute('type', 'image');
     ele.setAttribute('src', ('./assets/ingredients/' + key.replace(' ', '').toLowerCase() + '.png'));
