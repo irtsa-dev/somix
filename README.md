@@ -18,41 +18,68 @@
 </h2>
 <br />
 <p align="center">
-    <b>SOMIX</b> is a project designed for the game <a href="https://store.steampowered.com/app/3164500/Schedule_I/">Schedule I</a> by <a href="https://store.steampowered.com/search/?developer=TVGS">TVGS</a> (also known as Tyler) to find effects and market values for certain mixtures within the game.
-  A project designed for the game schedule one to find the effects and market values for certain mixtures.
+    <b>SOMIX</b> is a project designed for the game <a href="https://store.steampowered.com/app/3164500/Schedule_I/">Schedule I</a> by <a href="https://store.steampowered.com/search/?developer=TVGS">TVGS</a> (also known as Tyler) to find effects and market values for certain mixtures within the game using the mixing section. One can also figure out recipes to achieve certain effects by using the reverse mixing section.
 </p>
 <br />
 <br />
 <br />
 <br />
+<br />
+<br />
 
-## Usage
-Usage is simple, the site will display both **products**, **ingredients**, and the current **recipe** you have created so far.
+# Usage
+The primary page will include two buttons to take you to either the **Mixer** or **Reverse Mixer**, clicking either will bring you to the specific page.
 <p align="left">
-    <img src="https://github.com/user-attachments/assets/c54f78d6-8666-474e-87eb-aff5373775f1"
-        height="400">
+    <img src="https://github.com/user-attachments/assets/5e8b8239-b8e8-4abc-b568-a93cb27156b9"
+        height=400, width=800>
 </p>
 <br />
 <br />
+<br />
+<br />
 
-You can now choose a product as your base by clicking on one of the products, the information for your **recipe** will automatically be updated for the **market value** and **effects**. The product you selected will also show up here first.
+## Mixer
+On the **Mixer** section, the site will display **products** and **ingredients** for you to select to build a **recipe**, displayed at the bottom. 
 <p align="left">
     <img src="https://github.com/user-attachments/assets/1e0c1bc3-eb0e-46dc-987c-353cd15a4b4b"
-        height="400">
+        height=400, width=800>
 </p>
 <br />
-<br />
 
-You can now choose ingredients for the recipe by clicking on them to automatically add them to the recipe. The information for your **recipe** will automatically be updated for the **market value** and **effects** just like selecting a product.
+You can choose a product by simply clicking on one of the listed **products**. You can then also choose an ingredient by simply clicking on one of the listed **ingredients**. As you make your selections, the site will automatically update the **recipe** and the corresponding information of your recipe such as the **effects** and **market value**.
 <p align="left">
     <img src="https://github.com/user-attachments/assets/a26d046c-c41b-4cc9-9c05-31fe69d932ba"
-        height="400">
+        height=400, width=800>
+</p>
+<br />
+
+You can remove the product or an ingredient from the **recipe** by simply clicking on it within the **recipe** as well, information will update automatically for you. Note that it will not let you add more than eight items to your recipe.
+<p align="left">
+    <img src="https://github.com/user-attachments/assets/1d00396b-01c0-40ec-8ee8-92062376f53a"
+        height=400, width=800>
 </p>
 <br />
 <br />
+<br />
+<br />
 
-If you do not like one of the ingredients you added, you can simply click on it within the **recipe** to remove it. You can also remove the product you used this way as well, but note that information will not display unless a product is selected. You can also opt to choose a new product and it will replace the existing one. The information for your **recipe** will automatically be updated for the **market value** and **effects** as you do this.
+## Reverse Mixer
+On the **Reverse Mixer** section, the site will display **products** and **effects** for you.
 <p align="left">
-    <img src="https://github.com/user-attachments/assets/1d00396b-01c0-40ec-8ee8-92062376f53a"
-        height="400">
+    <img src="https://github.com/user-attachments/assets/c7e6f7e0-8cfd-4470-9310-78e595fe6cb8"
+        height=400, width=800>
+</p>
+<br />
+
+Here, you can select both products and effects to check, simply clicking on them will fill in the corresponding box informing you that you have selected this option. You can also click again to uncheck them. Note that you cannot select more than eight effects.
+<p align="left">
+    <img src="https://github.com/user-attachments/assets/ee274728-1bfc-48ee-8a94-fe123b150f6b"
+        height=400, width=800>
+</p>
+<br />
+
+Once you have selected everything you wish to find, you can then hit the **find recipe** button to find a recipe that will have those effects and your selected product(s). Note that it will only display one recipe, so if you selected multiple products, it will only show the recipe it found for the left most selected product. If you select "OG Kush" and "Green Crack" for example, it will only display the recipe found for "OG Kush" unless it did not find a recipe for it, in which it will then show the one for "Green Crack" instead. If not recipe could be found, it will inform of this.
+<p align="left">
+    <img src="https://github.com/user-attachments/assets/8f1c4d80-ca32-4cff-9a3a-1fc7c9a7e723"
+        height=400, width=800>
 </p>
