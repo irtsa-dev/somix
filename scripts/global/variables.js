@@ -1,0 +1,67 @@
+const Products = {
+    'OG Kush' : ['Calming', [141, 149, 99]],
+    'Sour Diesel' : ['Refreshing', [198, 190, 86]],
+    'Green Crack' : ['Energizing', [143, 191, 91]],
+    'Granddaddy Purple' : ['Sedating', [116, 93, 146]],
+    'Meth' : [null, [206, 193, 170]],
+    'Cocaine' : [null, [245, 245, 245]]
+};
+
+const Ingredients = {
+    'Cuke' : ['Energizing', [['Euphoric', 'Laxative'], ['Foggy', 'Cyclopean'], ['Gingeritis', 'Thought-Provoking'], ['Munchies', 'Athletic'], ['Slippery', 'Munchies'], ['Sneaky', 'Paranoia'], ['Toxic', 'Euphoric']]],
+    'Banana' : ['Gingeritis', [['Calming', 'Sneaky'], ['Cyclopean', 'Thought-Provoking'], ['Disorienting', 'Focused'], ['Energizing', 'Thought-Provoking'], ['Focused', 'Seizure-Inducing'], [4, 'Refreshing'], ['Paranoia', 'Jennerising'], ['Smelly', 'Anti-Gravity'], ['Toxic', 'Smelly']]],
+    'Paracetamol' : ['Sneaky', [['Calming', 'Slippery'], ['Electrifying', 'Athletic'], ['Energizing', 'Paranoia'], ['Focused', 'Gingeritis'], ['Foggy', 'Calming'], ['Glowing', 'Toxic'], ['Munchies', 'Anti-Gravity'], ['Paranoia', 'Balding'], ['Spicy', 'Bright-Eyed'], ['Toxic', 'Tropic Thunder']]],
+    'Donut' : ['Calorie-Dense', [['Anti-Gravity', 'Slippery'], ['Balding', 'Sneaky'], ['Calorie-Dense', 'Explosive'], ['Focused', 'Euphoric'], ['Jennerising', 'Gingeritis'], ['Munchies', 'Calming'], ['Shrinking', 'Energizing']]],
+    'Viagor' : ['Tropic Thunder', [['Athletic', 'Sneaky'], ['Disorienting', 'Toxic'], ['Euphoric', 'Bright-Eyed'], ['Laxative', 'Calming']]],
+    'Mouth Wash' : ['Balding', [['Calming', 'Anti-Gravity'], ['Calorie-Dense', 'Sneaky'], ['Explosive', 'Sedating'], ['Focused', 'Jennerising']]],
+    'Flu Medicine' : ['Sedating', [['Athletic', 'Munchies'], ['Calming', 'Bright-Eyed'], ['Cyclopean', 'Foggy'], ['Electrifying', 'Refreshing'], ['Euphoric', 'Toxic'], ['Focused', 'Calming'], ['Laxative', 'Euphoric'], ['Munchies', 'Slippery'], ['Shrinking', 'Paranoia'], ['Thought-Provoking', 'Gingeritis']]],
+    'Gasoline' : ['Toxic', [['Energizing', 'Spicy'], ['Disorienting', 'Glowing'], ['Electrifying', 'Disorienting'], ['Euphoric', 'Energizing'], ['Gingeritis', 'Smelly'], ['Jennerising', 'Sneaky'], ['Laxative', 'Foggy'], ['Munchies', 'Sedating'], ['Paranoia', 'Calming'], ['Shrinking', 'Focused'], ['Sneaky', 'Tropic Thunder']]],
+    'Energy Drink' : ['Athletic', [['Disorienting', 'Electrifying'], ['Euphoric', 'Energizing'], ['Focused', 'Shrinking'], ['Foggy', 'Laxative'], ['Glowing', 'Disorienting'], ['Schizophrenic', 'Balding'], ['Sedating', 'Munchies'], ['Spicy', 'Euphoric'], ['Tropic Thunder', 'Sneaky']]],
+    'Motor Oil' : ['Slippery', [['Energizing', 'Munchies'], ['Euphoric', 'Sedating'], ['Foggy', 'Toxic'], ['Munchies', 'Schizophrenic'], ['Paranoia', 'Anti-Gravity']]],
+    'Mega Bean' : ['Foggy', [['Athletic', 'Laxative'], ['Calming', 'Glowing'], ['Energizing', 'Cyclopean'], ['Focused', 'Disorienting'], ['Jennerising', 'Paranoia'], ['Seizure-Inducing', 'Focused'], ['Shrinking', 'Electrifying'], ['Slippery', 'Toxic'], ['Sneaky', 'Calming'], ['Cyclopean', 'Thought-Provoking'], ['Thought-Provoking', 'Energizing']]],
+    'Chili' : ['Spicy', [['Anti-Gravity', 'Tropic Thunder'], ['Athletic', 'Euphoric'], ['Laxative', 'Long Faced'], ['Munchies', 'Toxic'], ['Shrinking', 'Refreshing'], ['Sneaky', 'Bright-Eyed']]],
+    'Battery' : ['Bright-Eyed', [['Cyclopean', 'Glowing'], ['Electrifying', 'Euphoric'], ['Euphoric', 'Zombifying'], ['Laxative', 'Calorie-Dense'], ['Munchies', 'Tropic Thunder'], ['Shrinking', 'Munchies']]],
+    'Iodine' : ['Jennerising', [['Calming', 'Balding'], ['Calorie-Dense'], ['Euphoric', 'Seizure-Inducing'], ['Foggy', 'Paranoia'], ['Refreshing', 'Thought-Provoking'], ['Toxic', 'Sneaky']]],
+    'Addy' : ['Thought-Provoking', [['Explosive', 'Euphoric'], ['Foggy', 'Energizing'], ['Glowing', 'Refreshing'], ['Long Faced', 'Electrifying'], ['Sedating', 'Gingeritis']]],
+    'Horse Semen' : ['Long Faced', [['Anti-Gravity', 'Calming'], ['Gingeritis', 'Refreshing'], ['Thought-Provoking', 'Electrifying']]]
+};
+
+const Effects = {
+    'Shrinking': [0.6, [182, 254, 218]],
+    'Zombifying' : [0.58, [113, 171, 93]],
+    'Cyclopean' : [0.56, [254, 193, 116]],
+    'Anti-Gravity' : [0.54, [35, 91, 203]],
+    'Long Faced' : [0.52, [254, 217, 97]],
+    'Electrifying' : [0.50, [85, 200, 253]],
+    'Glowing' : [0.48, [133, 228, 89]],
+    'Tropic Thunder' : [0.46, [254, 159, 71]],
+    'Thought-Provoking' : [0.44, [254, 160, 203]],
+    'Jennerising' : [0.42, [254, 141, 248]],
+    'Bright-Eyed' : [0.40, [190, 247, 253]],
+    'Spicy' : [0.38, [254, 107, 76]],
+    'Foggy' : [0.36, [176, 176, 175]],
+    'Slippery' : [0.34, [162, 223, 253]],
+    'Athletic' : [0.32, [117, 200, 253]],
+    'Balding' : [0.30, [199, 146, 50]],
+    'Calorie-Dense' : [0.28, [254, 132, 244]],
+    'Sedating' : [0.26, [107, 95, 216]],
+    'Sneaky' : [0.24, [123, 123, 123]],
+    'Energizing' : [0.22, [154, 254, 109]],
+    'Gingeritis' : [0.20, [254, 136, 41]],
+    'Euphoric' : [0.18, [254, 234, 116]],
+    'Focused' : [0.16, [117, 241, 253]],
+    'Refreshing' : [0.14, [178, 254, 252]],
+    'Munchies' : [0.12, [201, 110, 87]],
+    'Calming' : [0.10, [254, 208, 155]],
+    'Disorienting' : [0, [254, 117, 81]],
+    'Explosive' : [0, [254, 75, 64]],
+    'Laxative' : [0, [118, 60, 37]],
+    'Lethal' : [0, [159, 43, 34]],
+    'Paranoia' : [0, [196, 103, 98]],
+    'Schizophrenic' : [0, [100, 90, 253]],
+    'Seizure-Inducing' : [0, [254, 233, 0]],
+    'Smelly' : [0, [125, 188, 49]],
+    'Toxic' : [0, [95, 154, 49]],
+};
+
+FoundRecipe = [];
