@@ -39,8 +39,7 @@ div.modal#blackscreen {
 }
 
 div.buttons {
-    position: relative;
-    bottom: 2em;
+    padding: 0.5em;
 }
 
 div.recipe-images {
