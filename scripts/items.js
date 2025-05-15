@@ -94,7 +94,7 @@ function determineEffects() {
                 }
             }
             RecipeEffects = RecipeEffects.concat(NewEffects);
-            RecipeEffects.push(item[0]);
+            if (!RecipeEffects.includes(item[0]) {RecipeEffects.push(item[0]);}
         }
     }
     return [...new Set(RecipeEffects)];
