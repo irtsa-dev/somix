@@ -86,12 +86,14 @@ function determineEffects() {
             let item = Ingredients[recipeContent[i].id];
             let Replacements = item[1];
             let replacementsLength = Replacements.length;
+            let NewEffects = [];
             for (x = 0; x < replacementsLength; x++) {
                 if (RecipeEffects.includes(Replacements[x][0])) {
                     RecipeEffects.splice(RecipeEffects.indexOf(Replacements[x][0]), 1);
-                    RecipeEffects.push(Replacements[x][1]);
+                    NewEffects.push(Replacements[x][1]);
                 }
             }
+            RecipeEffects = RecipeEffects.concat(NewEffects);
             RecipeEffects.push(item[0]);
         }
     }
