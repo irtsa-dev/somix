@@ -1,0 +1,134 @@
+@import url("./sections/main.css");
+@import url("./sections/loading.css");
+
+
+div.effects {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-auto-rows: 13%;
+    justify-content: center;
+    align-items: center;
+}
+
+div.products, div.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.modal#loading {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    width: 40%;
+    height: 40%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #555555;
+    border-radius: 5%;
+}
+
+div.modal#blackscreen {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+div.buttons {
+    position: relative;
+    bottom: 2em;
+}
+
+div.recipe-images {
+    display: flex;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -300%);
+}
+
+div.backButton-wrapper {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+}
+
+
+pre.error-text {
+    display: flex;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -500%);
+    color: #ff6666;
+    font-size: 1.2em;
+}
+
+
+label.effectText, label.productText, label.mixText {
+    color: #ffffff;
+    font-size: 1.2em;
+    transition: all 0.2s ease-in-out;
+}
+
+label.mixText {
+    font-size: 1.4em;
+}
+
+label.productText {
+    padding: 1em;
+}
+
+label.effectText:hover, label.mixText:hover, label.productText:hover {
+    filter: brightness(1.2);
+    transform: scale(1.1);
+}
+
+
+input.effectCheckbox, input.productCheckbox {
+    appearance: initial;
+    background-color: #222222;
+    margin: 0;
+    color: currentColor;
+    width: 1em;
+    height: 1em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translate(0.4em, 0.15em);
+    place-content: center;
+    transition: border 0.3s ease;
+}
+
+input.effectCheckbox:checked, input.productCheckbox:checked {
+    border: 0.50em solid currentColor;
+}
+
+input.mixButton {
+    background: transparent;
+    border: none;
+    max-width: 2.5em;
+    transition: all 0.5s ease;
+    transform: translateY(25%);
+}
+
+input.backButton {
+    font-size: 1.5em;
+    color: #ffffff;
+    background-color: #444444;
+    border: none;
+    width: 2.8em;
+    height: 1.5em;
+    border-radius: 20%;
+    transition: all 0.2s ease;
+}
+
+input.backButton:hover {
+    filter: brightness(1.2);
+    transform: scale(1.1);
+}
