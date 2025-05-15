@@ -11,41 +11,29 @@
         <link rel="stylesheet" href="./styles/index.css">
         <link rel="shortcut icon" type="image/x-icon" href="./assets/logo/favicon.ico?">
     </head>
+
+    
     <body>
         <div class="banner">
-            </br>
-            </br>
-            <img src="./assets/logo/logo.png" height=50 width=83>
-        </div>
-
-        <div class="products">
-            <h2 class="text">Products</h2>
-        </div>
-        </br></br>
-
-        <div class="ingredients">
-            <h2 class="text">Ingredients</h2>
+            </br></br>
+            <img src="./assets/logo/logo.png" height=325 width=450>
         </div>
         </br></br></br></br>
-        
-        <div class="recipe">
-            <h2 class="text">Recipe</h2>
-            <div class="recipeitems">
-            </div>
-        </div>
-        </br></br>
-        
-        <div class="recipe-price">
-            <h3 class="text">Market Value</h3>
-            <pre class="priceinfo"></pre>
-        </div>
-        </br>
 
-        <div class="recipe-effects">
-            <h3 class="text">Effects</h3>
-            <pre class="effectinfo"></pre>
+
+        <div class="buttons">
+            <button onclick="pageMix()">
+                <img src="./assets/icons/mix.png" height=150>
+                </br></br><label class="button-text">Mixer</label>
+            </button>
+
+            <button onclick="pageReverseMix()">
+                <img src="./assets/icons/reversemix.png" height=150>
+                </br></br><label class="button-text">Reverse Mixer</label>
+            </button>
         </div>
     </body>
-    <script src="./scripts/items.js"></script>
-    <script src="./scripts/information.js"></script>
+
+    
+    <script src="./scripts/index/links.js"></script>
 </html>
