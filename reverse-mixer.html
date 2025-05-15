@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SOMIX</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./styles/reverse-mixer.css">
+        <link rel="shortcut icon" type="image/x-icon" href="./assets/logo/favicon.ico?">
+    </head>
+
+
+    <body>
+        <div class="banner">
+            </br></br>
+            <img src="./assets/logo/logo.png" height=50 width=83>
+        </div>
+
+        <div class="modal", id="blackscreen"></div>
+        <div class="modal", id="loading">
+            <div class="recipe"></div>
+            <div class="loader-wrapper">
+                <div class="recipe-images"></div>
+                <pre class="error-text"></pre>
+                <div class="loader"></div>
+                <div class="backButton-wrapper">
+                    <input type="button" value="Back" class="backButton" onclick="goBack()">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="text">Products</h2>
+            <div class="products"></div>
+        </div>
+        </br></br>
+
+        <div>
+            <h2 class="text">Effects</h2>
+            </br>
+            <div class="effects"></div>
+        </div>
+        </br></br></br></br></br></br>
+
+        <footer>
+            <div class="buttons">
+                <label class="mixText">
+                    Find Recipe
+                    <input type="image" src="./assets/icons/search.png" class="mixButton" onclick="displayRecipe()">
+                </label>
+            </div>
+        </footer>
+    </body>
+
+
+    <script src="./scripts/global/variables.js"></script>
+    <script src="./scripts/reverse-mixer/items.js"></script>
+    <script src="./scripts/reverse-mixer/recipes.js"></script>
+</html>
