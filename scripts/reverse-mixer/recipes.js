@@ -1,4 +1,5 @@
-function display(data) {
+function display(data, worker) {
+    worker.terminate();
     let errorText = document.getElementsByClassName('error-text')[0];
     if (!data[0]) {errorText.innerHTML = data[1];}
     else {
@@ -41,7 +42,7 @@ function displayRecipe() {
 
     const worker = new Worker('./scripts/reverse-mixer/worker.js');
     worker.postMessage({'args' : [EffectCheckboxes, ProductCheckboxes, Ingredients, Products, Effects]});
-    worker.onmessage = ev => display(ev.data);
+    worker.onmessage = ev => display(ev.data, worker);
 }
 
 
