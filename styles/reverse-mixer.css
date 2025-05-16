@@ -139,7 +139,7 @@ button.bannerButton {
     transition: all 0.2s ease-int-out;
 }
 
-button.bannerButton {
+button.bannerButton:hover {
     transform: scale(1.1);
     filter: brightness(1.2);
 }
