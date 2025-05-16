@@ -25,6 +25,17 @@ div.banner {
     padding-left: 1em;
 }
 
+div.banner button {
+    background: none;
+    border: none;
+    transition: all 0.5s ease-int-out;
+}
+
+div.banner button:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
 
 .text {
     text-align: center;
