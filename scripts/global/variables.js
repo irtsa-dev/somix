@@ -63,5 +63,3 @@ const Effects = {
     'Smelly' : [0, [125, 188, 49]],
     'Toxic' : [0, [95, 154, 49]],
 };
-
-FoundRecipe = [];
