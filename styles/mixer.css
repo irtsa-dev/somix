@@ -52,7 +52,7 @@ input.linkicon:hover {
 button.bannerButton {
     background: none;
     border: none;
-    transition: all 0.2s ease-int-out;
+    transition: all 0.2s ease-in-out;
 }
 
 button.bannerButton:hover {
