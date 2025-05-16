@@ -49,6 +49,18 @@ input.linkicon:hover {
 }
 
 
+button.bannerButton {
+    background: none;
+    border: none;
+    transition: all 0.2s ease-int-out;
+}
+
+button.bannerButton {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+
 footer {
     margin-top: auto;
 }
