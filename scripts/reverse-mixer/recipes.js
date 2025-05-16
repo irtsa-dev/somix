@@ -1,8 +1,8 @@
-function display(data) {
+function display(data, worker) {
+    worker.terminate();
     let errorText = document.getElementsByClassName('error-text')[0];
     if (!data[0]) {errorText.innerHTML = data[1];}
     else {
-        errorText.innerHTML = '';
         data = data[1];
         const dataLength = data.length;
         let imgDiv = document.getElementsByClassName('recipe-images')[0];
@@ -23,6 +23,7 @@ function display(data) {
 
 
 function displayRecipe() {
+    let errorText = document.getElementsByClassName('error-text')[0];
     let tempEffectCheckboxes = document.getElementsByClassName('effectCheckbox');
     let tempProductCheckboxes = document.getElementsByClassName('productCheckbox');
     let lengthtempEC = tempEffectCheckboxes.length;
@@ -34,14 +35,15 @@ function displayRecipe() {
     let ProductCheckboxes = [];
     for (i = 0; i < lengthtempPC; i++) {ProductCheckboxes.push({'id' : tempProductCheckboxes[i].id, 'checked': tempProductCheckboxes[i].checked});}
     
-    
+
+    errorText.innerHTML = '';
     document.getElementById('blackscreen').style.display = 'flex';
     document.getElementById('loading').style.display = 'flex';
     document.getElementsByClassName('loader')[0].style.display = 'flex';
 
     const worker = new Worker('./scripts/reverse-mixer/worker.js');
     worker.postMessage({'args' : [EffectCheckboxes, ProductCheckboxes, Ingredients, Products, Effects]});
-    worker.onmessage = ev => display(ev.data);
+    worker.onmessage = ev => display(ev.data, worker);
 }
 
 
