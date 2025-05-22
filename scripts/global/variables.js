@@ -9,7 +9,7 @@ const Products = {
 
 const Ingredients = {
     'Cuke' : ['Energizing', [['Euphoric', 'Laxative'], ['Foggy', 'Cyclopean'], ['Gingeritis', 'Thought-Provoking'], ['Munchies', 'Athletic'], ['Slippery', 'Munchies'], ['Sneaky', 'Paranoia'], ['Toxic', 'Euphoric']]],
-    'Banana' : ['Gingeritis', [['Calming', 'Sneaky'], ['Cyclopean', 'Thought-Provoking'], ['Disorienting', 'Focused'], ['Energizing', 'Thought-Provoking'], ['Focused', 'Seizure-Inducing'], [4, 'Refreshing'], ['Paranoia', 'Jennerising'], ['Smelly', 'Anti-Gravity'], ['Toxic', 'Smelly']]],
+    'Banana' : ['Gingeritis', [['Calming', 'Sneaky'], ['Cyclopean', 'Thought-Provoking'], ['Disorienting', 'Focused'], ['Energizing', 'Thought-Provoking'], ['Focused', 'Seizure-Inducing'], ['Long Faced', 'Refreshing'], ['Paranoia', 'Jennerising'], ['Smelly', 'Anti-Gravity'], ['Toxic', 'Smelly']]],
     'Paracetamol' : ['Sneaky', [['Calming', 'Slippery'], ['Electrifying', 'Athletic'], ['Energizing', 'Paranoia'], ['Focused', 'Gingeritis'], ['Foggy', 'Calming'], ['Glowing', 'Toxic'], ['Munchies', 'Anti-Gravity'], ['Paranoia', 'Balding'], ['Spicy', 'Bright-Eyed'], ['Toxic', 'Tropic Thunder']]],
     'Donut' : ['Calorie-Dense', [['Anti-Gravity', 'Slippery'], ['Balding', 'Sneaky'], ['Calorie-Dense', 'Explosive'], ['Focused', 'Euphoric'], ['Jennerising', 'Gingeritis'], ['Munchies', 'Calming'], ['Shrinking', 'Energizing']]],
     'Viagor' : ['Tropic Thunder', [['Athletic', 'Sneaky'], ['Disorienting', 'Toxic'], ['Euphoric', 'Bright-Eyed'], ['Laxative', 'Calming']]],
