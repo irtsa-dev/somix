@@ -9,6 +9,7 @@ for (const [key, value] of Object.entries(Effects)) {
     ele.setAttribute('id', 'effect-' + key);
     ele.setAttribute('style', 'color: rgb(' + value[1].join(', ') + ');');
     ele.innerHTML = key;
+    effectsDiv.appendChild(ele);
 
     let multLabel = document.getElementById('effect-' + key);
     ele = document.createElement('label')
