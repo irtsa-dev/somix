@@ -13,7 +13,7 @@ for (const [key, value] of Object.entries(Effects)) {
 
     let multLabel = document.getElementById('effect-' + key);
     ele = document.createElement('label')
-    ele.setAttribute('class', 'effectText');
+    ele.setAttribute('class', 'multText');
     ele.setAttribute('id', 'effect-' + key + '-mult');
     ele.innerHTML = '   ' + value[0].toString() + 'x';
     multLabel.appendChild(ele);
