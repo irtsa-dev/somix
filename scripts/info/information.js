@@ -3,7 +3,7 @@ const effectsDiv = document.getElementsByClassName('effects')[0];
 
 
 
-for (const [key, value] of Objects.entries(Effects)) {
+for (const [key, value] of Object.entries(Effects)) {
     let ele = document.createElement('label');
     ele.setAttribute('class', 'effectText');
     ele.setAttribute('id', 'effect-' + key);
