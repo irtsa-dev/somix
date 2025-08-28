@@ -1,0 +1,41 @@
+@import url("./sections/main.css");
+
+
+div.effects {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-auto-rows: 13%;
+    justify-content: center;
+    align-items: center;
+}
+
+div.buttons {
+    padding: 0.5em;
+}
+
+div.recipe-images {
+    display: flex;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -300%);
+}
+
+
+label.effectText {
+    color: #ffffff;
+    font-size: 1.2em;
+    transition: all 0.2s ease-in-out;
+}
+
+
+button.bannerButton {
+    background: none;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+button.bannerButton:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
