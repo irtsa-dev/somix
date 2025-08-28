@@ -13,19 +13,15 @@ div.buttons {
     padding: 0.5em;
 }
 
-div.recipe-images {
-    display: flex;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -300%);
-}
-
 
 label.effectText {
     color: #ffffff;
     font-size: 1.2em;
-    transition: all 0.2s ease-in-out;
+}
+
+label.multText {
+    color: #ffffff;
+    font-size: 1.1em;
 }
 
 
