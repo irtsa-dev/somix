@@ -3,8 +3,8 @@
         height="400">
 </p>
 <p align="center">
-<a href="https://github.com/irtsa-dev/somix/releases/tag/v1.4.0">
-        <img src="https://img.shields.io/badge/release-1.4.0-brightgreen"
+<a href="https://github.com/irtsa-dev/somix/releases/tag/v1.4.1">
+        <img src="https://img.shields.io/badge/release-1.4.1-brightgreen"
             alt="release"></a>
 <a href="https://github.com/irtsa-dev/somix/issues">
         <img src="https://custom-icon-badges.demolab.com/github/issues-raw/irtsa-dev/somix?logo=issue"
