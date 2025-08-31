@@ -1,6 +1,7 @@
 const productsDiv = document.getElementsByClassName('products')[0];
 const ingredientsDiv = document.getElementsByClassName('ingredients')[0];
 const recipe = document.getElementsByClassName('recipeitems')[0];
+const maxIngredients = 12;
 
 
 
@@ -125,7 +126,7 @@ for (const [key, value] of Object.entries(Products)) {
     ele.setAttribute('class', 'product')
 
     ele.addEventListener('click', (event) => {
-        if (recipe.children.length == 8) {return null;}
+        if (recipe.children.length == maxIngredients) {return null;}
         event.preventDefault();
         addRecipe('product', ele.id);
         displayRecipeInformation();
@@ -144,7 +145,7 @@ for (const [key, value] of Object.entries(Ingredients)) {
     ele.setAttribute('class', 'ingredient')
 
     ele.addEventListener('click', (event) => {
-        if (recipe.children.length == 8) {return null;}
+        if (recipe.children.length == maxIngredients) {return null;}
         event.preventDefault();
         addRecipe('ingredient', ele.id);
         displayRecipeInformation();
