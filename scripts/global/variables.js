@@ -7,6 +7,17 @@ const Products = {
     'Cocaine' : [null, [245, 245, 245]]
 };
 
+const ProductPrices = {
+    'OG Kush' : 30,
+    'Sour Diesel' : 35,
+    'Green Crack' : 40,
+    'Granddaddy Purple' : 45,
+    'Low-Grade Pseudo' : 60,
+    'Standard Pseudo' : 80,
+    'High-Grade Pseudo' : 110,
+    'Coca' : 150
+}
+
 const Ingredients = {
     'Cuke' : ['Energizing', [['Euphoric', 'Laxative'], ['Foggy', 'Cyclopean'], ['Gingeritis', 'Thought-Provoking'], ['Munchies', 'Athletic'], ['Slippery', 'Munchies'], ['Sneaky', 'Paranoia'], ['Toxic', 'Euphoric']]],
     'Banana' : ['Gingeritis', [['Calming', 'Sneaky'], ['Cyclopean', 'Thought-Provoking'], ['Disorienting', 'Focused'], ['Energizing', 'Thought-Provoking'], ['Focused', 'Seizure-Inducing'], ['Long Faced', 'Refreshing'], ['Paranoia', 'Jennerising'], ['Smelly', 'Anti-Gravity'], ['Toxic', 'Smelly']]],
@@ -25,6 +36,25 @@ const Ingredients = {
     'Addy' : ['Thought-Provoking', [['Explosive', 'Euphoric'], ['Foggy', 'Energizing'], ['Glowing', 'Refreshing'], ['Long Faced', 'Electrifying'], ['Sedating', 'Gingeritis']]],
     'Horse Semen' : ['Long Faced', [['Anti-Gravity', 'Calming'], ['Gingeritis', 'Refreshing'], ['Thought-Provoking', 'Electrifying']]]
 };
+
+const IngredientPrices = {
+    'Cuke' : 2,
+    'Banana' : 2,
+    'Paracetamol' : 3,
+    'Donut' : 3,
+    'Viagor' : 4,
+    'Mouth Wash' : 4,
+    'Flu Medicine' : 5,
+    'Gasoline' : 5,
+    'Energy Drink' : 6,
+    'Motor Oil' : 6,
+    'Mega Bean' : 7,
+    'Chili' : 7,
+    'Battery' : 8,
+    'Iodine' : 8,
+    'Addy' : 9,
+    'Horse Semen' : 9
+}
 
 const Effects = {
     'Shrinking': [0.6, [182, 254, 218]],
