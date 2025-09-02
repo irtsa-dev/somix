@@ -63,25 +63,58 @@ function determinePrice(RecipeEffects) {
 
 
 
+function determineCost() {
+    let costIngredients = 0;
+    const recipeLength = recipe.children.length;
+    if (recipeLength > 1) {for (i = 1; i < recipeLength; i++) {costIngredients += IngredientPrices[recipe.children[i].id];}}
+
+    let cost = [];
+    switch (recipe.children[0].id) {
+        case 'OG Kush': 
+            cost = [3, 4];
+            break;
+        case 'Sour Diesel': 
+        case 'Green Crack': 
+            cost = [3, 5];
+            break;
+        case 'Granddaddy Purple': 
+            cost = [3, 6];
+            break;
+        case 'Meth': 
+            cost = [14, 19];
+            break;
+        case 'Cocaine': 
+            cost = [150, 150];
+            break;
+    }
+    return [cost[0] + costIngredients, cost[1] + costIngredients];
+}
+
+
+
 function displayRecipeInformation() {
     if (recipe.childElementCount == 0) {
         changeEffects(null);
         changePrice(null);
+        changeCost(null);
         return null;
     }
 
     if (recipe.children[0].className != 'product') {
         changeEffects(null);
         changePrice(null);
+        changeCost(null);
         return null;
     }
 
 
     RecipeEffects = determineEffects();
     price = determinePrice(RecipeEffects);
+    cost = determineCost();
 
     changeEffects(RecipeEffects);
     changePrice(price);
+    changeCost(cost);
 }
 
 
