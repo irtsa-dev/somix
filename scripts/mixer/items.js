@@ -47,11 +47,14 @@ function determinePrice(RecipeEffects) {
         case 'Granddaddy Purple':
             price = 35;
             break;
-        case ('Meth'):
+        case 'Meth':
             price = 70;
             break;
-        case ('Cocaine'):
-            price = 150;
+        case 'Cocaine':
+            price = 155;
+            break;
+        case 'Shrooms':
+            price = 200;
             break;
     }
 
@@ -80,11 +83,14 @@ function determineCost() {
         case 'Granddaddy Purple': 
             cost = [3, 6];
             break;
+        case 'Shrooms':
+            cost = [10, 13];
+            break;
         case 'Meth': 
             cost = [14, 19];
             break;
         case 'Cocaine': 
-            cost = [150, 150];
+            cost = [16, 16;
             break;
     }
     return [cost[0] + costIngredients, cost[1] + costIngredients];
