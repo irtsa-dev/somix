@@ -3,6 +3,7 @@ const Products = {
     'Sour Diesel' : ['Refreshing', [198, 190, 86]],
     'Green Crack' : ['Energizing', [143, 191, 91]],
     'Granddaddy Purple' : ['Sedating', [116, 93, 146]],
+    'Shrooms' : [null, [200, 145, 80]],
     'Meth' : [null, [206, 193, 170]],
     'Cocaine' : [null, [245, 245, 245]]
 };
@@ -15,7 +16,8 @@ const ProductPrices = {
     'Low-Grade Pseudo' : 60,
     'Standard Pseudo' : 80,
     'High-Grade Pseudo' : 110,
-    'Coca' : 150
+    'Shrooms' : 200,
+    'Coca' : 155
 }
 
 const Ingredients = {
