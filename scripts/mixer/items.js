@@ -90,7 +90,7 @@ function determineCost() {
             cost = [14, 19];
             break;
         case 'Cocaine': 
-            cost = [16, 16;
+            cost = [16, 16];
             break;
     }
     return [cost[0] + costIngredients, cost[1] + costIngredients];
